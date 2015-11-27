@@ -1,14 +1,32 @@
 <!doctype html>
 <html ng-app="app" lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Songs</title>
-  <base href="/">
-</head>
-<body>
-  <div class="container">
-  	<a href="/songs">Songs to Learn</a>
-    <ui-view></ui-view>
-  </div>
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>My Songs</title>
+		<base href="/dashboard">
+	</head>
+
+	<body>
+
+		<h1>My Guitar Songs</h1>
+
+		<nav class="navbar navbar-default">
+
+			<div>
+				<ul class="nav navbar-nav">
+		  			<li><a href="/dashboard">Dashboard</a></li>
+		  			<li><a href="/songs#learn">Songs to Learn</a></li>
+		  			<li><a href="/songs#playlist">Play List</a></li>
+		  		</ul>	
+	  		</div>	
+	  		
+		</nav>
+
+		<div>
+    		<ui-view></ui-view>
+    	</div>	
+
+	</body>
+
 </html>

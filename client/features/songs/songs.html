@@ -1,3 +1,28 @@
-<div id="home-header" class="jumbotron">
-	List of Songs
+<div id="home-header">
+
+	<table class="table table-striped">
+
+		<thead>
+
+			<tr>
+				<th></th>
+				<th>Song Name</th>
+				<th>Artist</th>
+				<th>Priority</th>
+				<th>Level</th>
+				<th>Actions</th>
+		</thead>
+		<tbody>	
+			<tr ng-repeat="song in songs.songsList">
+				<td></td>
+				<td>{{song.name}}</td>
+				<td>{{song.artist}}</td>
+				<td>{{song.priority}}</td>
+				<td>{{song.level}}</td>
+				<td></td>
+			</tr>
+		</tbody>
+
+	</table>	
+
 </div>	

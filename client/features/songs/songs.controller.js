@@ -1,7 +1,13 @@
 export default class SongsController {
 	
-	constructor () 
+	constructor ($http) 
 	{
+		$http.get('/test').success(function(response) {
+            console.log('aew');
+        });
+
+		this.test = "test";
+
 		this.songsList = [
 		{
 			name : "Dust in the Wind",
@@ -19,3 +25,5 @@ export default class SongsController {
 	}
 
 }
+
+SongsController.$inject = ['$http'];

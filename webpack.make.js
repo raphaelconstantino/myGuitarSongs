@@ -213,7 +213,7 @@ module.exports = function makeWebpackConfig (options) {
    * Reference: http://webpack.github.io/docs/webpack-dev-server.html
    */
   config.devServer = {
-    contentBase: './public',
+    contentBase: './server',
     stats: {
       modules: false,
       cached: false,

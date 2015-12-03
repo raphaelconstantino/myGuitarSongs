@@ -1,5 +1,14 @@
 <div id="home-header">
 
+
+	<form ng-submit="songs.insertSong()">
+        Name: <input ng-model="songs.song.name">
+        Artist: <input ng-model="songs.song.artist">
+        Priority: <input ng-model="songs.song.priority">
+        Level: <input ng-model="songs.song.level">
+        <input type="submit">
+    </form>
+
 	<table class="table table-striped">
 
 		<thead>
